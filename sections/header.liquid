@@ -518,7 +518,6 @@
     constructor() {
       super();
     }
-
     connectedCallback() {
       this.header = document.getElementById('shopify-section-header');
       this.headerBounds = {};
@@ -545,7 +544,6 @@
         this.headerBounds = entries[0].intersectionRect;
         observer.disconnect();
       });
-
       observer.observe(this.header);
     }
 
